@@ -2,10 +2,11 @@ import vinext from "vinext";
 import { defineConfig } from "vite";
 
 const localBindingConfig = {
-  name: "brian-lim-arvr-portfolio",
+  name: "portfolio",
   main: "./worker/index.ts",
   compatibility_date: "2026-09-01",
   compatibility_flags: ["nodejs_compat"],
+  workers_dev: true,
 };
 
 export default defineConfig(async () => {
